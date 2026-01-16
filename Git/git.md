@@ -62,8 +62,16 @@ https://github.com/github/gitignore
 **提交更新**
 
 提交前可以用`git status`查看需要的文件是不是已经暂存，再运行提交命令`git commit`。
+```
+$ git commit
+```
+可以在`commit`后加上`-m`选项，将提交信息与命令放在同一行
+```
+git commit -m "更新信息"
+```
 
 **跳过使用暂存区域**
+
 提交时，给`git commit`加上`-a`选项，Git会自动把所有已跟踪过的文件暂存在一起一并提交而跳过`git add`步骤
 **移除文件**
 
